@@ -49,6 +49,7 @@ class LoginFragment : Fragment() {
         viewModel = ViewModelProvider(this).get(LoginViewModel::class.java)
 
         buttonLogin.setOnClickListener {
+            Log.d("logintext", "hai")
             var username = editUsernameLogin.text.toString()
             var password = editPasswordLogin.text.toString()
 
